@@ -1,5 +1,6 @@
 import streamlit as st
-from groq import Groq 
+from groq import Groq
+import json
 
 # --- Page Config ---
 st.set_page_config(page_title="EyeHear | Groq Edition", page_icon="👁️")
@@ -7,7 +8,7 @@ st.set_page_config(page_title="EyeHear | Groq Edition", page_icon="👁️")
 # --- Sidebar: Groq API Setup ---
 with st.sidebar:
     st.title("Settings")
-    st.markdown("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")
+    st.markdown("[Get Groq API Key](https://console.groq.com/keys)")
     api_key = st.text_input("Enter Groq API Key", type="password")
     model_choice = "llama-3.3-70b-versatile"
 
